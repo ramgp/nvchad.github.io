@@ -120,9 +120,9 @@ end
 ```lua
 local age = 22
 
-if age == 10 and x > 0 then -- both should be true
+if age == 10 and age > 0 then -- both should be true
   print("kiddo!")
-elseif x == 18 or x > 18 then -- 1 or more are true
+elseif age == 18 or age > 18 then -- either is true
   print("over 18")
 end
 
@@ -134,9 +134,9 @@ end
 you can also invert a value with the **not** keyword
 
 ```lua
-local x = 18
+local age = 18
 
-if not x == 18 then
+if not age == 18 then
   print("kiddo!")
 end
 ```
